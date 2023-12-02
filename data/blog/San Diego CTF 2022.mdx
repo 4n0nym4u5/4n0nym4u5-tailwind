@@ -7,8 +7,6 @@ tags:
 - mips
 ---
 
-import ImageWithBackground from './components/ImageWithBackground.tsx';
-
 - **CTF:** [CTFtime Event](https://ctftime.org/event/1356)
 
 I played this CTF with **[Project Sekai](https://ctftime.org/team/169557)** and it was really great. We came 5th in the CTF.
@@ -387,12 +385,7 @@ The `main` function reads 40 bytes to a 40 byte character array which is safe. A
 * 112 bytes of padding + RBP -> bss  + RIP -> `0x4007cf` 
 
 <div style={{ display: 'flex', justifyContent: 'center' }}>
-    <ImageWithBackground
-    imageUrl="https://i.imgur.com/0TuhK8w.png"
-    altText="payload layout"
-    backgroundColor="#55555555"
-    width="275px"
-    height="200px"
+    ![](https://i.imgur.com/0TuhK8w.png)
     />
 </div>
 
@@ -406,12 +399,7 @@ Now you can read 140 bytes of rop chain in bss and stack pivot there.
 
 * So the rop chain will change the got of `fflush` to `one_gadget` and we then stack pivot on `fflush` to run the `one_gadget`.
 <div style={{ display: 'flex', justifyContent: 'center' }}>
-    <ImageWithBackground
-    imageUrl="https://i.imgur.com/zXILsbo.png"
-    altText="payload layout"
-    backgroundColor="#55555555"
-    width="350px"
-    height="350px"
+    ![](https://i.imgur.com/zXILsbo.png)
     />
 </div>
 
