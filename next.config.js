@@ -62,7 +62,7 @@ module.exports = () => {
 
   return plugins.reduce((acc, next) => next(acc), {
     output: 'export',
-    basePath: '/4n0nym4u5-blog',
+    basePath: '/4n0nym4u5-tailwind',
     reactStrictMode: true,
     pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
     eslint: {
