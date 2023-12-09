@@ -1,0 +1,74 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>MyBlog</title>
+      <link>https://tailwind-nextjs-starter-blog.vercel.app/blog</link>
+      <description>CTF and Vulnerability Research contents.</description>
+      <language>en-us</language>
+      <managingEditor>arjun1gu@gmail.com (4n0nym4u5)</managingEditor>
+      <webMaster>arjun1gu@gmail.com (4n0nym4u5)</webMaster>
+      <lastBuildDate>Sun, 02 Oct 2022 08:02:00 GMT</lastBuildDate>
+      <atom:link href="https://tailwind-nextjs-starter-blog.vercel.app/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/Sekai CTF 2022</guid>
+    <title>Sekai CTF 2022 gets writeup</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/Sekai CTF 2022</link>
+    <description>Challenge writeup for the gets challenge from Sekai CTF 2022 created by me. I found a way to gain Remote-Code-Execution bypassing the hardening of latest gcc compilers which doesn&#39;t provide any useful ROP gadgets. The exploit technique in this challenge details on using just a pop rdi gadget combining with gets() to craft powerful assembly instructions and achieve Remote-Code-Execution.</description>
+    <pubDate>Sun, 02 Oct 2022 08:02:00 GMT</pubDate>
+    <author>arjun1gu@gmail.com (4n0nym4u5)</author>
+    <category>rop</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/Imaginary CTF 2022</guid>
+    <title>Imaginary CTF 2022</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/Imaginary CTF 2022</link>
+    undefined
+    <pubDate>Mon, 25 Jul 2022 15:19:00 GMT</pubDate>
+    <author>arjun1gu@gmail.com (4n0nym4u5)</author>
+    <category>fmt</category><category>heap</category><category>libc-2.27</category><category>house-of-xxx</category><category>house-of-husk</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/San Diego CTF 2022</guid>
+    <title>San Diego CTF 2022</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/San Diego CTF 2022</link>
+    undefined
+    <pubDate>Tue, 10 May 2022 10:42:00 GMT</pubDate>
+    <author>arjun1gu@gmail.com (4n0nym4u5)</author>
+    <category>fmt</category><category>shellcode</category><category>mips</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/CArot</guid>
+    <title>ACSC 2021 CArot writeup</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/CArot</link>
+    undefined
+    <pubDate>Fri, 14 Jan 2022 08:45:00 GMT</pubDate>
+    <author>arjun1gu@gmail.com (4n0nym4u5)</author>
+    <category>stack</category><category>rop</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/MIPSunderstanding</guid>
+    <title>InCTF Nationals 2021 MIPSunderstanding writeup</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/MIPSunderstanding</link>
+    undefined
+    <pubDate>Mon, 10 Jan 2022 12:56:00 GMT</pubDate>
+    <author>arjun1gu@gmail.com (4n0nym4u5)</author>
+    <category>stack</category><category>shellcode</category><category>mips</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/listbook</guid>
+    <title>0ctf 2021 listbook writeup</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/listbook</link>
+    undefined
+    <pubDate>Fri, 07 Jan 2022 10:40:00 GMT</pubDate>
+    <author>arjun1gu@gmail.com (4n0nym4u5)</author>
+    <category>heap</category><category>uaf</category><category>libc-2.31</category><category>tcache-stashing-unlink</category>
+  </item>
+
+    </channel>
+  </rss>

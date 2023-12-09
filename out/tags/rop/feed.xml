@@ -1,0 +1,34 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>MyBlog</title>
+      <link>https://tailwind-nextjs-starter-blog.vercel.app/blog</link>
+      <description>CTF and Vulnerability Research contents.</description>
+      <language>en-us</language>
+      <managingEditor>arjun1gu@gmail.com (4n0nym4u5)</managingEditor>
+      <webMaster>arjun1gu@gmail.com (4n0nym4u5)</webMaster>
+      <lastBuildDate>Fri, 14 Jan 2022 08:45:00 GMT</lastBuildDate>
+      <atom:link href="https://tailwind-nextjs-starter-blog.vercel.app/tags/rop/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/CArot</guid>
+    <title>ACSC 2021 CArot writeup</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/CArot</link>
+    undefined
+    <pubDate>Fri, 14 Jan 2022 08:45:00 GMT</pubDate>
+    <author>arjun1gu@gmail.com (4n0nym4u5)</author>
+    <category>stack</category><category>rop</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/Sekai CTF 2022</guid>
+    <title>Sekai CTF 2022 gets writeup</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/Sekai CTF 2022</link>
+    <description>Challenge writeup for the gets challenge from Sekai CTF 2022 created by me. I found a way to gain Remote-Code-Execution bypassing the hardening of latest gcc compilers which doesn&#39;t provide any useful ROP gadgets. The exploit technique in this challenge details on using just a pop rdi gadget combining with gets() to craft powerful assembly instructions and achieve Remote-Code-Execution.</description>
+    <pubDate>Sun, 02 Oct 2022 08:02:00 GMT</pubDate>
+    <author>arjun1gu@gmail.com (4n0nym4u5)</author>
+    <category>rop</category>
+  </item>
+
+    </channel>
+  </rss>
