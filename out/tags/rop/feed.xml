@@ -37,7 +37,7 @@
     <description>Pwn challenges writeup from Wolv CTF 2024. The Pwn challenges were beginner friendly with an interesting challenge CScript.</description>
     <pubDate>Thu, 21 Mar 2024 08:02:00 GMT</pubDate>
     <author>arjun1gu@gmail.com (4n0nym4u5)</author>
-    <category>rop</category>
+    <category>rop</category><category>fmt</category>
   </item>
 
   <item>
