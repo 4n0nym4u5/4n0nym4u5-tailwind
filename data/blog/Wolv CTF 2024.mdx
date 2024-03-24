@@ -309,8 +309,8 @@ io.interactive()
     PIE:      <font color="#FD5FF1">No PIE (0x400000)</font></pre>` }} />
 
 
-This was a statically compiled c++ binary(hard). The bug was interesting and my team mates @IceCreamMan and @rycbar did the most part. They found the bug understood it and triggered it and IceCreamMan shared the PoC.
-
+This was a statically compiled c++ binary(hard). The bug was interesting and my team mates [@IceCreamMan](https://twitter.com/IceCreamMan3333) and [@rycbar](https://twitter.com/rycbar7r) did the most part. They found the bug understood it and triggered it and IceCreamMan shared the PoC.
+The vulnerability lied in the argparse function where the input went to OOB when parsing comments. By using this primitive we were able to overwrite the structure of the parser to control its opcode and the arguments.
 He did a good job with fuzzing and reversing this. Meanwhile even i wrote a custom fuzzer got a lot of crashed but got skill issued and wasnt able to understand the root cause of the bug. :joy: 
 As per he explained.
 ```c
